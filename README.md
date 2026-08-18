@@ -2,7 +2,7 @@
 
 A personal **Expo / React Native** comic reader for your phone.
 
-Select a folder of local **CBZ** files, browse a cover-based library, and read with progress that sticks — without accounts, cloud sync, or analytics.
+Select a folder of local **CBZ** files, browse a cover-based library, and read with progress that sticks - without accounts, cloud sync, or analytics.
 
 <p align="center">
   <img alt="Tests" src="https://img.shields.io/badge/tests-Jest-C21325?style=flat-square" />
@@ -16,7 +16,7 @@ Select a folder of local **CBZ** files, browse a cover-based library, and read w
 
 ## Why this exists
 
-Built for **personal use on your own device** (Expo Go). Comics stay on your phone. Reading progress and preferences are saved locally with SQLite. **Mark as read is always a conscious choice** — finishing the last page never auto-marks a comic.
+Built for **personal use on your own device** (Expo Go). Comics stay on your phone. Reading progress and preferences are saved locally with SQLite. **Mark as read is always a conscious choice** - finishing the last page never auto-marks a comic.
 
 ---
 
@@ -30,7 +30,7 @@ Built for **personal use on your own device** (Expo Go). Comics stay on your pho
 | Continue reading | Jump back to the last unfinished issue                                                    |
 | Organize         | Filters (all / unread / reading / finished / favorites), sort (recent / title / progress) |
 | Series           | Light grouping inferred from titles (e.g. `Batman #12`)                                   |
-| Folder library   | **Select a folder** (Android) — all CBZ/ZIP files in it appear on your shelf              |
+| Folder library   | **Select a folder** (Android) - all CBZ/ZIP files in it appear on your shelf              |
 | Delete           | Confirmation dialog → remove from app **and** try to delete the original file on device   |
 
 ### Reader
@@ -42,7 +42,7 @@ Built for **personal use on your own device** (Expo Go). Comics stay on your pho
 | Spreads      | Wide pages auto-split in portrait when enabled                           |
 | Controls     | Scrubber, pinch / double-tap zoom, brightness dimmer, dark reader chrome |
 | Comfort      | Keep screen awake while reading · pages always fit and centered on screen |
-| Mark as read | Manual only — from detail screen or reader chrome                        |
+| Mark as read | Manual only - from detail screen or reader chrome                        |
 
 ### App
 
@@ -59,7 +59,7 @@ Built for **personal use on your own device** (Expo Go). Comics stay on your pho
 | Format            | Status                                                      |
 | ----------------- | ----------------------------------------------------------- |
 | **CBZ** / **ZIP** | Supported in Expo Go                                        |
-| **CBR** (RAR)     | Not supported in Expo Go — convert to CBZ first (see below) |
+| **CBR** (RAR)     | Not supported in Expo Go - convert to CBZ first (see below) |
 
 ### Why CBR is hard
 
@@ -109,7 +109,7 @@ Scan the QR code with Expo Go. On Android, use the Expo Go app; on iOS, the Came
 
 ## How to use
 
-1. **Select folder** (Android) — pick a folder of CBZ/ZIP comics; they appear on your shelf
+1. **Select folder** (Android) - pick a folder of CBZ/ZIP comics; they appear on your shelf
 2. Open a cover → **Start** or **Continue** reading
 3. Tap the **center** of a page for controls (scrubber, mark read, dimmer)
 4. Tap edges or swipe to turn pages
@@ -173,8 +173,8 @@ GitHub Actions on every push and pull request:
 
 | Workflow                                                                          | Checks                                  |
 | --------------------------------------------------------------------------------- | --------------------------------------- |
-| [Comic Reader — Unit Tests & Typecheck](.github/workflows/tests.yml)              | TypeScript (`tsc`) + Jest unit tests    |
-| [Comic Reader — ESLint (Import Order & Code Quality)](.github/workflows/lint.yml) | ESLint, including import groups / order |
+| [Comic Reader - Unit Tests & Typecheck](.github/workflows/tests.yml)              | TypeScript (`tsc`) + Jest unit tests    |
+| [Comic Reader - ESLint (Import Order & Code Quality)](.github/workflows/lint.yml) | ESLint, including import groups / order |
 
 The job fails if any check fails.
 
@@ -193,4 +193,4 @@ The job fails if any check fails.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).
