@@ -1,0 +1,28 @@
+name: Comic Reader — ESLint (Import Order & Code Quality)
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  eslint:
+    name: ESLint with import order and group rules
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Run ESLint (import order, groups, Expo rules)
+        run: npm run lint

@@ -39,3 +39,9 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# local Claude agent settings
+.claude/
+
+# Cursor IDE
+.cursor/
