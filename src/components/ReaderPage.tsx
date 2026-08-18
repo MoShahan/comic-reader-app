@@ -4,13 +4,13 @@ import { StyleSheet, View, useWindowDimensions } from 'react-native';
 
 import { Image, type ImageLoadEventData } from 'expo-image';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Animated, {
   runOnJS,
   useAnimatedStyle,
   useSharedValue,
   withTiming,
 } from 'react-native-reanimated';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import type { SpreadHalf } from '@/types/comic';
 
