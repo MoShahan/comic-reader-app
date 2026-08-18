@@ -1,4 +1,4 @@
-# ComicReader
+# Comic Reader
 
 A personal **Expo / React Native** comic reader for your phone.
 
