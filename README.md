@@ -180,8 +180,6 @@ The job fails if any check fails.
 
 **Pre-commit:** [Husky](https://typicode.github.io/husky/) runs [lint-staged](https://github.com/lint-staged/lint-staged) on `git commit`. Staged `.js` / `.jsx` / `.ts` / `.tsx` files are passed through `eslint --fix` (import order, groups, and other auto-fixable rules). Remaining lint errors block the commit. After `npm install`, the hook is installed via the `prepare` script.
 
-**Dependabot** ([`.github/dependabot.yml`](.github/dependabot.yml)) opens weekly PRs for npm and GitHub Actions updates (grouped where useful: Expo, React Navigation, ESLint, testing).
-
 ---
 
 ## Tech stack
