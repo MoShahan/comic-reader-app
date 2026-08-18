@@ -102,6 +102,7 @@ Scan the QR code with Expo Go. On Android, use the Expo Go app; on iOS, the Came
 | `npm run android` / `ios` / `web` | Platform shortcuts             |
 | `npm test`                        | Unit tests                     |
 | `npm run lint`                    | ESLint (includes import order) |
+| `npm run lint:fix`                | ESLint with auto-fix           |
 | `npm run typecheck`               | TypeScript check               |
 
 ---
@@ -176,6 +177,8 @@ GitHub Actions on every push and pull request:
 | [Comic Reader — ESLint (Import Order & Code Quality)](.github/workflows/lint.yml) | ESLint, including import groups / order |
 
 The job fails if any check fails.
+
+**Pre-commit:** [Husky](https://typicode.github.io/husky/) runs [lint-staged](https://github.com/lint-staged/lint-staged) on `git commit`. Staged `.js` / `.jsx` / `.ts` / `.tsx` files are passed through `eslint --fix` (import order, groups, and other auto-fixable rules). Remaining lint errors block the commit. After `npm install`, the hook is installed via the `prepare` script.
 
 **Dependabot** ([`.github/dependabot.yml`](.github/dependabot.yml)) opens weekly PRs for npm and GitHub Actions updates (grouped where useful: Expo, React Navigation, ESLint, testing).
 
