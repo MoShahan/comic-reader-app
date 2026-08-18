@@ -43,7 +43,7 @@ export function ImportProgressModal({ visible, progress, onCancel, onRunInBackgr
             <Text style={styles.primaryText}>Add in background</Text>
           </Pressable>
           <Text style={[styles.hint, { color: colors.muted }]}>
-            Keep using the app — comics appear on your shelf as they finish.
+            Keep using the app - comics appear on your shelf as they finish.
           </Text>
 
           <Pressable onPress={onCancel} style={styles.cancelBtn}>

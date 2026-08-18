@@ -50,7 +50,7 @@ type StagedPage = {
 
 /**
  * Unpack a CBZ/ZIP into `pagesDir` without Base64 and without holding the full
- * archive (or all pages) in JS memory — chunked disk reads + one-page inflate.
+ * archive (or all pages) in JS memory - chunked disk reads + one-page inflate.
  */
 export async function extractCbzToDirectory(
   sourceUri: string,

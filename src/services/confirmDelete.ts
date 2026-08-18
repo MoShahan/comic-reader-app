@@ -37,7 +37,7 @@ export function confirmDeleteComic(
 ) {
   Alert.alert(
     'Delete this comic?',
-    `“${title}”\n\n• From this app — remove from your shelf (keeps the CBZ on your device)\n• From device — remove from the app and delete the original CBZ file`,
+    `“${title}”\n\n• From this app - remove from your shelf (keeps the CBZ on your device)\n• From device - remove from the app and delete the original CBZ file`,
     [
       { text: 'Cancel', style: 'cancel' },
       {

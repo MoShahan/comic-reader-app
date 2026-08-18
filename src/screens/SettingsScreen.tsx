@@ -141,7 +141,7 @@ export function SettingsScreen() {
 
         <Text style={[styles.formatHeading, { color: colors.text }]}>Supported</Text>
         <Text style={[styles.formatBody, { color: colors.muted }]}>
-          · CBZ — comic book ZIP (preferred){'\n'}· ZIP — plain ZIP of page images
+          · CBZ - comic book ZIP (preferred){'\n'}· ZIP - plain ZIP of page images
         </Text>
         <Text style={[styles.formatNote, { color: colors.muted }]}>
           Both work in Expo Go. Put files in a folder, then use Select folder on the library screen.
@@ -151,7 +151,7 @@ export function SettingsScreen() {
           Not supported
         </Text>
         <Text style={[styles.formatBody, { color: colors.muted }]}>
-          · CBR — RAR archive (needs native UnRAR; not available in Expo Go)
+          · CBR - RAR archive (needs native UnRAR; not available in Expo Go)
         </Text>
 
         <Text style={[styles.formatHeading, { color: colors.text, marginTop: spacing.md }]}>

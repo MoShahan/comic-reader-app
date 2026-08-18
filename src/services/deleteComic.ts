@@ -15,7 +15,7 @@ async function removeAppCopy(id: string): Promise<boolean> {
   return true;
 }
 
-/** Remove from Comic Reader only — original CBZ on device is kept. */
+/** Remove from Comic Reader only - original CBZ on device is kept. */
 export async function deleteComicFromApp(id: string): Promise<DeleteResult> {
   const removed = await removeAppCopy(id);
   return {

@@ -106,7 +106,7 @@ export async function findComicBySourceFileName(fileName: string): Promise<Comic
   );
   if (byName) return mapRow(byName);
 
-  // Legacy rows without sourceFileName — match URI basename.
+  // Legacy rows without sourceFileName - match URI basename.
   const legacy = await db.getAllAsync<ComicRow>(
     `SELECT * FROM comics WHERE sourceFileName IS NULL OR trim(sourceFileName) = ''`,
   );

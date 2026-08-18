@@ -1,4 +1,4 @@
-name: Comic Reader — ESLint (Import Order & Code Quality)
+name: Comic Reader - ESLint (Import Order & Code Quality)
 
 on:
   push:

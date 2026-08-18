@@ -1,4 +1,4 @@
-name: Comic Reader — Unit Tests & Typecheck
+name: Comic Reader - Unit Tests & Typecheck
 
 on:
   push:
